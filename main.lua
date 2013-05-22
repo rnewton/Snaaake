@@ -12,7 +12,6 @@ function love.load()
 	font = love.graphics.newFont('Resources/fonts/PressStart2P-Regular.ttf', 16)
 	menuFont = love.graphics.newFont('Resources/fonts/PressStart2P-Regular.ttf', 35)
 	titleFont = love.graphics.newFont('Resources/fonts/PressStart2P-Regular.ttf', 60)
-	shader = love.graphics.newPixelEffect('Resources/shaders/shader.glsl')
 
 	-- colors
 	snakeGreen = {189,217,94}

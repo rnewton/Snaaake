@@ -46,7 +46,6 @@ function Snake.update(self, dt)
 			elseif self[1].dir == 1 then self[1].y = self[1].y - v * dt
 			else self[1].y = self[1].y + v * dt end
 		end
-		shader:send('light_pos', {self[1].x, self[1].y, 0})
 	else
 		-- set computer bearing towards player's last segment
 		if player[player.length-1] ~= nil then
