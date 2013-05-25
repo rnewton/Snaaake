@@ -29,6 +29,7 @@ function love.load()
 	nomSound = love.audio.newSource('Resources/sounds/nom.ogg', 'static')
 	nommedSound = love.audio.newSource('Resources/sounds/nommed.ogg', 'static')
 	levelSound = love.audio.newSource('Resources/sounds/level.ogg', 'static')
+	gameOverSound = love.audio.newSource('Resources/sounds/gameOver.wav', 'static')
 	soundStatus = 'On'
 
 	-- functions

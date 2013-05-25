@@ -108,10 +108,13 @@ function Snake.update(self, dt)
 	if self.respawn == 0 then
 		-- check collide self
 		if self.type == 'player' and self.length > 1 then
-			for i = 1, self.length do
+			for i = 1, (self.length-5) do
 				if self[i+5] ~= nil then
 					if math.sqrt( (self[1].x - self[i+5].x)^2 + (self[1].y - self[i+5].y)^2 ) < r*2 then
 						print('player ran into itself')
+						if soundStatus == 'On' then 
+							love.audio.play(gameOverSound)
+						end
 						gameOver()
 					end		
 				end
