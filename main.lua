@@ -34,7 +34,7 @@ function love.load()
 
 	-- functions
 	rand = mwc()
-	JSON = (loadfile "JSON.lua")()
+	JSON = require "JSON"
 
 	-- levels
 	enemies = {}
